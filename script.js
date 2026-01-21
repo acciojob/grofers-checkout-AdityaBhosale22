@@ -7,12 +7,12 @@ const getSum = () => {
 
   let total = 0;
 
-  prices.forEach(price => {
-    total += Number(price.textContent);
+  prices.forEach(p => {
+    total += Number(p.textContent);
   });
 
-  const oldAns = document.getElementById("ans");
-  if (oldAns) oldAns.remove();
+  const old = document.getElementById("ans");
+  if (old) old.remove();
 
   const tr = document.createElement("tr");
   const td = document.createElement("td");
